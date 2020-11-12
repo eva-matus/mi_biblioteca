@@ -1,0 +1,27 @@
+<p>
+    <strong>Title</strong>
+    <%= @book.title %>
+</p>
+
+<p>
+    <strong> Author</strong>
+    <%= @book.author %>
+</p>
+
+<p>
+    <strong>Status</strong>
+    <%= @book.status %>
+</p>
+
+<p>
+    <strong>Borrowed_at</strong>
+    <%= @book.borrowed_at %>
+</p>
+
+<p>
+    <strong>Returned_at</strong>
+    <%= @book.returned_at %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %>
+<%= link_to 'Start', root_path %>
