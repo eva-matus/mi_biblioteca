@@ -3,7 +3,7 @@ class BooksController < ApplicationController
 
     def index  
         @q = Book.ransack(params[:q])
-        @books = @q.result(distinct: true)
+        @book = @q.result(distinct: true)
     end
 
     def new
